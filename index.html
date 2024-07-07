@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>All About Lion</title>
+</head>
+<body>
+    <!-- navigation buttons -->
+    <nav>
+        <h2>LIONS</h2>
+        <a class="hide" href="#home">Home</a>
+        <a class="hide" href="#about-section">About</a>
+        <div onclick="dropDown()" class="drop hide">More&blacktriangledown;
+            <div class="drop-list">
+                <a class="dropdown" href="#habitat-section">Habitat</a>
+                <a class="dropdown" href="#behavior-section">Behavior</a>
+                <a class="dropdown" href="#diet-section">Diet</a>
+                <a class="dropdown" href="#life-cycle-section">Life Cycle</a>
+            </div>
+        </div>
+        <a class="hide" href="#contact">Contact</a>
+        <svg onclick="showSideBar()" class="menu" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+    </nav> 
+    <nav id="side-bar">
+        <svg onclick="hideSideBar()" class="close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        <a onclick="fade()" href="#home">Home</a>
+        <a onclick="fade()" href="#about-section">About</a>
+        <div class="drop" onclick="dropDownSide2()">More&blacktriangledown;
+            <div class="drop-list" id="drop-list">
+                <a class="drop-down" href="#habitat-section">Habitat</a>
+                <a class="drop-down" href="#behavior-section">Behavior</a>
+                <a class="drop-down" href="#diet-section">Diet</a>
+                <a class="drop-down" href="#life-cycle-section">Life Cycle</a>
+            </div>
+        </div>
+        <a onclick="fade()" href="#contact">Contact</a>
+    </nav> 
+
+    <!-- hero section -->
+    <div id="home" class="hero-section">
+        <h3>All About Lions</h3>
+        <p>Welcome to our comprehensive guide on lions! Dive into the world of these majestic creatures, learn about their habitats, behaviors, diets, and discover how we can all play a part in their conservation.</p>
+    </div>
+
+    <!-- about us section -->
+    <div id="about-section">
+        <h3>About Lions</h3>
+        <img src="Images/lion-3372720.jpg" alt="">
+        <p>Lions (Panthera leo) are one of the most iconic animals in the animal kingdom. Known as the "Kings of the Jungle," lions are celebrated for their strength, majestic appearance, and complex social structures. They primarily reside in Africa, with a small population in the Gir Forest of India.</p>
+    </div>
+
+    <!-- habitat section -->
+    <div id="habitat-section">
+        <h3>Habitat</h3>
+        <img src="Images/lions-21787.jpg" alt="">
+        <p>Lions are typically found in savannas, grasslands, and open woodlands. They prefer habitats that offer plenty of cover for hunting and ample prey. The African lion’s range includes sub-Saharan Africa, while the Asiatic lion resides in a small region in India.</p>
+    </div>
+
+    <!-- behavior section -->
+    <div id="behavior-section">
+        <h3>Behavior</h3>
+        <img src="Images/lion-4581841.jpg" alt="">
+        <p>Lions are unique among big cats due to their social nature. They live in groups called prides, which can consist of up to 30 members. A pride usually includes several related females, their cubs, and a few males. Females are the primary hunters, working together to bring down prey. Males defend the pride’s territory from intruders</p>
+    </div>
+
+    <!-- diet section-->
+    <div id="diet-section">
+        <h3>Diet</h3>
+        <img src="Images/lion-425150.jpg" alt="">
+        <p>As apex predators, lions primarily hunt large herbivores such as zebras, wildebeests, and buffaloes. They rely on teamwork and strategy to capture their prey, often hunting at night or during the early morning hours to take advantage of cooler temperatures and the element of surprise.</p>
+    </div>
+
+    <!-- life cycle section -->
+    <div id="life-cycle-section">
+        <h3>Life Cycle</h3>
+        <img src="Images/african-lion-2888519.jpg" alt="">
+        <p>As apex predators, lions primarily hunt large herbivores such as zebras, wildebeests, and buffaloes. They rely on teamwork and strategy to capture their prey, often hunting at night or during the early morning hours to take advantage of cooler temperatures and the element of surprise.</p>
+    </div>
+
+    <!-- conservation status -->
+    <div class="conservation-status">
+    <div class="enhancer">
+        <p>Lions are classified as vulnerable by the International Union for Conservation of Nature (IUCN). Their populations are declining due to habitat loss, human-wildlife conflict, and poaching. Conservation efforts focus on habitat preservation, anti-poaching initiatives, and community education to promote coexistence between lions and humans.</p>
+    </div>
+    </div>
+
+    <!-- fun fact section -->
+     <div class="funfact-section">
+        <h3>Fun Facts</h3>
+        <ol>
+            <li>A lion's roar can be heard up to 5 miles away and serves as a way to communicate with pride members and ward off rivals.</li>
+            <li>Lions can reach speeds of up to 50 mph but only in short bursts due to their lack of stamina.</li>
+            <li>Unlike other big cats, lions are social and live in prides, which helps them hunt more efficiently and protect their young.</li>
+        </ol>
+        <div class="gallery">
+            <img width="200px" height="130px" src="Images/lion-3317670.jpg" alt="">
+            <img width="200px" height="130px" src="Images/lion-4366887.jpg" alt="">
+            <img width="200px" height="130px" src="Images/lion-565820.jpg" alt="">
+            <img width="200px" height="130px" src="Images/lion-2885618.jpg" alt="">
+        </div>
+     </div>
+
+     <div id="contact" class="help">
+        <h3>How can you help?</h3>
+        <p>Support wildlife conservation organizations that work to protect lion habitats and reduce human-lion conflicts. Spread awareness about the importance of lions in the ecosystem and advocate for policies that safeguard their future. Consider donating to or volunteering with organizations dedicated to wildlife conservation.</p>
+        <a target="_blank" href="https://www.worldwildlife.org/">World Wildlife Fund (WWF)</a></li>
+        <a target="_blank" href="https://panthera.org/">Panthera</a></li>
+        <a target="_blank" href="https://lionguardians.org/">Lion Guardians</a></li>
+        <p>© 2020-2024 LIONS. All Rights Reserved.</p>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
